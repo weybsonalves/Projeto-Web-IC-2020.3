@@ -1,0 +1,276 @@
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Patua One', cursive;
+    background-color: #212121;
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+.menu {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #01727a;
+    padding: 10px 0px;
+    min-height: 4px;
+    width: 100%;
+}
+
+.menu a {
+    flex: 1;
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    color: #212121;
+    font-size: 1.2em;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-image: url(./assets/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    border-bottom: 20px solid #06848d;
+}
+
+.header h1 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 2em;
+    text-shadow: 0px 0px 4px #06848d;
+}
+
+.header h3 {
+    margin-top: 5px;
+    font-size: 1.5em;
+    padding: 0px 10px;
+    text-shadow: 0px 0px 4px #06848d;
+}
+
+.profile-photo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #06848d;
+}
+
+.sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #212121;
+    background-color: white;
+    border-top: 20px solid #06848d;
+    border-bottom: 20px solid #06848d;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px 35px;
+}
+
+.sobre-mim h2 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+.sobre-mim p {
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+.botao {
+    color: #212121;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #06848d;
+    font-size: 1em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #212121;
+    background-color: white;
+    border-top: 20px solid #06848d;
+    border-bottom: 20px solid #06848d;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px 10px;
+}
+
+.academica {
+    max-width: 700px;
+}
+
+.complementar {
+    max-width: 720px;
+}
+
+.formacao h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.curso {
+    list-style: url(./assets/flecha.png);
+    font-size: 1.5rem;
+}
+
+.inst {
+    list-style: url(./assets/quadrado.png);
+    font-size: 1.3rem;
+}
+
+.habilidades {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #212121;
+    background-color: white;
+    border-top: 20px solid #06848d;
+    border-bottom: 20px solid #06848d;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 10px;
+}
+
+.habilidades h2 {
+    font-size: 2em;
+}
+
+.habil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.habil p {
+    margin-top: 0;
+    font-size: 1.3em;
+}
+
+.habil img {
+    height: 100px;
+    width: 100px;
+}
+
+.meus-contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #06848d;
+    width: 100%;
+}
+
+.meus-contatos div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.meus-contatos img {
+    padding-right: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.meus-contatos a {
+    align-content: center;
+    text-decoration: none;
+    text-align: center;
+    color: #212121;
+    font-size: 1.2em;
+}
+
+.meus-contatos a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #01727a;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    min-height: 5px;
+    color: #212121;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .menu {
+        height: 3vh;
+        min-height: 29px;
+    }
+
+    .header {
+        height: 35vh;
+        min-height: 341px;
+    }
+
+    .sobre-mim {
+        padding: 20px 10vw;
+    }
+
+    .sobre-mim p {
+        max-width: 1325px;
+    }
+
+    .habil {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .meus-contatos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .meus-contatos div {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+    }
+}
